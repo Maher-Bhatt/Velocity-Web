@@ -7,6 +7,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import { Analytics } from "@vercel/analytics/react";
 import Index from "./pages/Index.tsx";
+import SpeedInsightsDashboard from "./pages/SpeedInsightsDashboard.tsx";
 import CustomWebDevPage from "./pages/services/CustomWebDevPage.tsx";
 import StartupWebsitePage from "./pages/services/StartupWebsitePage.tsx";
 import Web3DevPage from "./pages/services/Web3DevPage.tsx";
@@ -27,6 +28,7 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/speed-insights" element={<SpeedInsightsDashboard />} />
             <Route path="/services/custom-web-development" element={<CustomWebDevPage />} />
             <Route path="/services/startup-website-development" element={<StartupWebsitePage />} />
             <Route path="/services/web3-development" element={<Web3DevPage />} />
