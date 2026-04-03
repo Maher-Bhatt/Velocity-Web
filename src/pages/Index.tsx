@@ -151,7 +151,7 @@ const Index = () => {
         <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
           <div className="space-y-8">
             <div className="inline-flex items-center rounded-full border border-[#c8a4443d] bg-[#13131c] px-4 py-2 text-sm text-[#e6d3a1]">
-              Average turnaround: 2-3 days
+              Average turnaround: 1-2 weeks
             </div>
             <div className="space-y-4">
               <h1 className="font-display text-4xl font-semibold leading-tight text-white sm:text-5xl lg:text-6xl">
