@@ -44,7 +44,7 @@ const founders = [
 const pricingPlans = [
   {
     name: "Essential",
-    price: "$349",
+    price: "$249",
     badge: "BEST VALUE",
     description: "Everything a growing business needs to get online and start converting - no fluff, no upsells.",
     features: [
@@ -61,7 +61,7 @@ const pricingPlans = [
   },
   {
     name: "Premium",
-    price: "$999",
+    price: "$599",
     description: "For businesses that need real power - custom backend, data collection, and full-scale features.",
     features: [
       "Everything in Essential",
