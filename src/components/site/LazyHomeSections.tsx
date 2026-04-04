@@ -87,7 +87,7 @@ export const LazyHomeSections = () => {
   };
 
   return (
-    <>
+    <div className="deferred-sections">
       <section id="testimonials" className="section-space">
         <div className="mx-auto max-w-7xl space-y-10 px-4 sm:px-6 lg:px-10">
           <SectionHeading label="TESTIMONIALS" title="Loved by" accent="Client Founders" />
@@ -299,6 +299,6 @@ export const LazyHomeSections = () => {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 };

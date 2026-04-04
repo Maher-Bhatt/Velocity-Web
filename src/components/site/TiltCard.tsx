@@ -1,5 +1,4 @@
-import { useEffect, useState, type MouseEvent, type ReactNode } from "react";
-import { motion, useMotionValue, useReducedMotion, useTransform } from "framer-motion";
+import { useEffect, useState, type CSSProperties, type MouseEvent, type ReactNode } from "react";
 import { cn } from "@/lib/utils";
 
 type TiltCardProps = {
@@ -8,12 +7,8 @@ type TiltCardProps = {
 };
 
 export const TiltCard = ({ className, children }: TiltCardProps) => {
-  const prefersReducedMotion = useReducedMotion();
+  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
   const [canHover, setCanHover] = useState(false);
-  const x = useMotionValue(0);
-  const y = useMotionValue(0);
-  const rotateX = useTransform(y, [-0.5, 0.5], [8, -8]);
-  const rotateY = useTransform(x, [-0.5, 0.5], [-8, 8]);
 
   useEffect(() => {
     if (typeof window === "undefined") {
@@ -21,12 +16,19 @@ export const TiltCard = ({ className, children }: TiltCardProps) => {
     }
 
     const mediaQuery = window.matchMedia("(hover: hover) and (pointer: fine)");
+    const reducedMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
     const update = () => setCanHover(mediaQuery.matches);
+    const updateReducedMotion = () => setPrefersReducedMotion(reducedMotionQuery.matches);
 
     update();
+    updateReducedMotion();
     mediaQuery.addEventListener("change", update);
+    reducedMotionQuery.addEventListener("change", updateReducedMotion);
 
-    return () => mediaQuery.removeEventListener("change", update);
+    return () => {
+      mediaQuery.removeEventListener("change", update);
+      reducedMotionQuery.removeEventListener("change", updateReducedMotion);
+    };
   }, []);
 
   const handleMouseMove = (event: MouseEvent<HTMLDivElement>) => {
@@ -35,25 +37,25 @@ export const TiltCard = ({ className, children }: TiltCardProps) => {
     }
 
     const rect = event.currentTarget.getBoundingClientRect();
-    x.set((event.clientX - rect.left) / rect.width - 0.5);
-    y.set((event.clientY - rect.top) / rect.height - 0.5);
+    const rotateY = ((event.clientX - rect.left) / rect.width - 0.5) * 14;
+    const rotateX = (((event.clientY - rect.top) / rect.height - 0.5) * -14);
+    event.currentTarget.style.setProperty("--tilt-rotate-x", `${rotateX}deg`);
+    event.currentTarget.style.setProperty("--tilt-rotate-y", `${rotateY}deg`);
   };
 
-  const resetTilt = () => {
-    x.set(0);
-    y.set(0);
+  const resetTilt = (event: MouseEvent<HTMLDivElement>) => {
+    event.currentTarget.style.setProperty("--tilt-rotate-x", "0deg");
+    event.currentTarget.style.setProperty("--tilt-rotate-y", "0deg");
   };
 
   return (
-    <motion.div
+    <div
       className={cn("tilt-card", className)}
-      style={canHover && !prefersReducedMotion ? { rotateX, rotateY, transformPerspective: 1000 } : undefined}
+      style={canHover && !prefersReducedMotion ? ({ transformPerspective: 1000 } as CSSProperties) : undefined}
       onMouseMove={canHover && !prefersReducedMotion ? handleMouseMove : undefined}
       onMouseLeave={canHover && !prefersReducedMotion ? resetTilt : undefined}
-      whileHover={canHover && !prefersReducedMotion ? { z: 20 } : undefined}
-      transition={canHover && !prefersReducedMotion ? { duration: 0.2, ease: "easeOut" } : undefined}
     >
       {children}
-    </motion.div>
+    </div>
   );
 };

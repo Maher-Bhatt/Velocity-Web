@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -65,6 +63,8 @@
     border-radius: 9999px;
     filter: blur(36px);
     opacity: 0.65;
+    will-change: transform, opacity;
+    animation: orbFloat 18s ease-in-out infinite;
   }
 
   .orb-one {
@@ -81,6 +81,7 @@
     width: 16rem;
     height: 16rem;
     background: radial-gradient(circle, rgba(200, 164, 68, 0.18), transparent 70%);
+    animation-delay: -6s;
   }
 
   .orb-three {
@@ -89,6 +90,7 @@
     width: 14rem;
     height: 14rem;
     background: radial-gradient(circle, rgba(200, 164, 68, 0.11), transparent 70%);
+    animation-delay: -12s;
   }
 
   .navbar-shell {
@@ -120,6 +122,10 @@
     padding: 0.7rem 0.9rem;
   }
 
+  .mobile-menu-panel {
+    transition: max-height 220ms ease, opacity 220ms ease, padding 220ms ease, margin-top 220ms ease, border-color 220ms ease;
+  }
+
   .depth-wrap {
     transform-style: preserve-3d;
     perspective: 1000px;
@@ -128,11 +134,22 @@
   .depth-button {
     transform-style: preserve-3d;
     box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35), inset 0 0 0 1px rgba(200, 164, 68, 0.08);
+    transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease, color 180ms ease;
+  }
+
+  .depth-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 28px rgba(0, 0, 0, 0.42), inset 0 0 0 1px rgba(200, 164, 68, 0.08);
   }
 
   .section-space {
     padding-top: 5rem;
     padding-bottom: 1rem;
+  }
+
+  .deferred-sections {
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 3200px;
   }
 
   .section-label {
@@ -165,7 +182,8 @@
   .tilt-card {
     position: relative;
     transform-style: preserve-3d;
-    transition: box-shadow 260ms ease, border-color 260ms ease;
+    transform: perspective(1000px) rotateX(var(--tilt-rotate-x, 0deg)) rotateY(var(--tilt-rotate-y, 0deg));
+    transition: transform 220ms ease, box-shadow 260ms ease, border-color 260ms ease;
   }
 
   .glass-card {
@@ -184,6 +202,10 @@
   .floating-hero-card {
     min-height: 20rem;
     overflow: hidden;
+  }
+
+  .hero-float {
+    animation: heroFloat 4s ease-in-out infinite;
   }
 
   .hero-card-layer {
@@ -231,10 +253,45 @@
     color: #e4cf95;
   }
 
+  @keyframes heroFloat {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-12px);
+    }
+  }
+
+  @keyframes orbFloat {
+    0%,
+    100% {
+      transform: translate3d(0, 0, 0) scale(1);
+      opacity: 0.55;
+    }
+
+    50% {
+      transform: translate3d(0, -28px, 0) scale(1.04);
+      opacity: 0.72;
+    }
+  }
+
   @media (pointer: coarse) {
     .tilt-card:hover {
       box-shadow: 0 18px 36px rgba(0, 0, 0, 0.35);
       border-color: rgba(200, 164, 68, 0.2);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .parallax-orb,
+    .hero-float {
+      animation: none;
+    }
+
+    .tilt-card {
+      transform: none;
     }
   }
 }

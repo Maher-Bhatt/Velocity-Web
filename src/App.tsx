@@ -1,10 +1,6 @@
 import { lazy, Suspense } from "react";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { Toaster } from "@/components/ui/toaster";
-import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
 import { DeferredObservability } from "@/components/perf/DeferredObservability";
 
@@ -27,33 +23,25 @@ const PageLoader = () => (
   </div>
 );
 
-const queryClient = new QueryClient();
-
 const App = () => (
   <HelmetProvider>
-    <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <Suspense fallback={<PageLoader />}>
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/speed-insights" element={<SpeedInsightsDashboard />} />
-              <Route path="/services/custom-web-development" element={<CustomWebDevPage />} />
-              <Route path="/services/startup-website-development" element={<StartupWebsitePage />} />
-              <Route path="/services/web3-development" element={<Web3DevPage />} />
-              <Route path="/services/education-platform-development" element={<EducationPlatformPage />} />
-              <Route path="/case-studies/ztees" element={<ZteesCaseStudy />} />
-              <Route path="/case-studies/bountychains" element={<BountyChainsCase />} />
-              <Route path="/case-studies/itm-notes" element={<ITMNotesCase />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </Suspense>
-        </BrowserRouter>
-        <DeferredObservability />
-      </TooltipProvider>
-    </QueryClientProvider>
+    <BrowserRouter>
+      <Suspense fallback={<PageLoader />}>
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/speed-insights" element={<SpeedInsightsDashboard />} />
+          <Route path="/services/custom-web-development" element={<CustomWebDevPage />} />
+          <Route path="/services/startup-website-development" element={<StartupWebsitePage />} />
+          <Route path="/services/web3-development" element={<Web3DevPage />} />
+          <Route path="/services/education-platform-development" element={<EducationPlatformPage />} />
+          <Route path="/case-studies/ztees" element={<ZteesCaseStudy />} />
+          <Route path="/case-studies/bountychains" element={<BountyChainsCase />} />
+          <Route path="/case-studies/itm-notes" element={<ITMNotesCase />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Suspense>
+    </BrowserRouter>
+    <DeferredObservability />
   </HelmetProvider>
 );
 

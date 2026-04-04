@@ -1,7 +1,6 @@
 import { lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
-import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { PageSeo } from "@/components/seo/PageSeo";
 import { SectionHeading } from "@/components/site/SectionHeading";
@@ -142,7 +141,7 @@ const Index = () => (
             </div>
           </div>
 
-          <motion.div animate={{ y: [0, -12, 0] }} transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}>
+          <div className="hero-float">
             <TiltCard className="floating-hero-card glass-card p-7">
               <div className="hero-card-layer hero-card-layer-one" />
               <div className="hero-card-layer hero-card-layer-two" />
@@ -160,7 +159,7 @@ const Index = () => (
                 </Link>
               </div>
             </TiltCard>
-          </motion.div>
+          </div>
         </div>
       </section>
 

@@ -1,5 +1,4 @@
 import { useEffect, useState, type ReactNode } from "react";
-import { AnimatePresence, motion, useScroll, useTransform } from "framer-motion";
 import { ArrowUpRight, Mail, Menu, MessageCircle, Phone, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -13,10 +12,6 @@ type SiteLayoutProps = {
 export const SiteLayout = ({ children }: SiteLayoutProps) => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const { scrollY } = useScroll();
-  const layerOneY = useTransform(scrollY, [0, 1800], [0, -160]);
-  const layerTwoY = useTransform(scrollY, [0, 1800], [0, -240]);
-  const layerThreeY = useTransform(scrollY, [0, 1800], [0, -90]);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -27,9 +22,9 @@ export const SiteLayout = ({ children }: SiteLayoutProps) => {
 
   return (
     <div className="site-shell relative min-h-screen overflow-x-hidden">
-      <motion.div style={{ y: layerOneY }} className="parallax-orb orb-one" />
-      <motion.div style={{ y: layerTwoY }} className="parallax-orb orb-two" />
-      <motion.div style={{ y: layerThreeY }} className="parallax-orb orb-three" />
+      <div className="parallax-orb orb-one" />
+      <div className="parallax-orb orb-two" />
+      <div className="parallax-orb orb-three" />
 
       <header className={cn("navbar-shell fixed left-0 right-0 top-0 z-50 px-4 py-4 sm:px-6 lg:px-10", scrolled && "navbar-scrolled")}>
         <div className="mx-auto flex max-w-7xl items-center justify-between">
@@ -46,11 +41,11 @@ export const SiteLayout = ({ children }: SiteLayoutProps) => {
             ))}
           </nav>
 
-          <motion.div whileHover={{ y: -2, z: 14 }} whileTap={{ y: 1, z: 0 }} className="depth-wrap hidden lg:block">
+          <div className="depth-wrap hidden lg:block">
             <Button asChild variant="outline" className="depth-button border-[#c8a444] bg-transparent text-[#c8a444] hover:bg-[#c8a444] hover:text-[#0a0a0f]">
               <a href="/#contact">Get Started</a>
             </Button>
-          </motion.div>
+          </div>
 
           <button
             type="button"
@@ -62,30 +57,25 @@ export const SiteLayout = ({ children }: SiteLayoutProps) => {
           </button>
         </div>
 
-        <AnimatePresence>
-          {mobileOpen ? (
-            <motion.div
-              initial={{ opacity: 0, y: -14 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -14 }}
-              transition={{ duration: 0.25, ease: "easeOut" }}
-              className="mobile-menu-panel mt-4 rounded-2xl border border-[#c8a4442b] bg-[#0f0f16f0] p-4 backdrop-blur-xl lg:hidden"
-            >
-              <div className="flex flex-col gap-3">
-                {navLinks.map((link) => (
-                  <a key={link.label} href={link.href} className="mobile-nav-link" onClick={() => setMobileOpen(false)}>
-                    {link.label}
-                  </a>
-                ))}
-                <Button asChild className="mt-1 w-full bg-[#c8a444] text-[#0a0a0f] hover:bg-[#d8b95f]">
-                  <a href="/#contact" onClick={() => setMobileOpen(false)}>
-                    Get Started
-                  </a>
-                </Button>
-              </div>
-            </motion.div>
-          ) : null}
-        </AnimatePresence>
+        <div
+          className={cn(
+            "mobile-menu-panel overflow-hidden rounded-2xl border border-[#c8a4442b] bg-[#0f0f16f0] backdrop-blur-xl lg:hidden",
+            mobileOpen ? "mt-4 max-h-96 p-4 opacity-100" : "max-h-0 border-transparent p-0 opacity-0",
+          )}
+        >
+          <div className="flex flex-col gap-3">
+            {navLinks.map((link) => (
+              <a key={link.label} href={link.href} className="mobile-nav-link" onClick={() => setMobileOpen(false)}>
+                {link.label}
+              </a>
+            ))}
+            <Button asChild className="mt-1 w-full bg-[#c8a444] text-[#0a0a0f] hover:bg-[#d8b95f]">
+              <a href="/#contact" onClick={() => setMobileOpen(false)}>
+                Get Started
+              </a>
+            </Button>
+          </div>
+        </div>
       </header>
 
       <main className="relative z-10 pt-24 sm:pt-28">{children}</main>
