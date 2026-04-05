@@ -5,6 +5,7 @@ import Index from "./pages/Index.tsx";
 import { DeferredObservability } from "@/components/perf/DeferredObservability";
 
 const SpeedInsightsDashboard = lazy(() => import("./pages/SpeedInsightsDashboard.tsx"));
+const QuoteRequestReceivedPage = lazy(() => import("./pages/QuoteRequestReceivedPage.tsx"));
 const CustomWebDevPage = lazy(() => import("./pages/services/CustomWebDevPage.tsx"));
 const StartupWebsitePage = lazy(() => import("./pages/services/StartupWebsitePage.tsx"));
 const Web3DevPage = lazy(() => import("./pages/services/Web3DevPage.tsx"));
@@ -29,6 +30,8 @@ const App = () => (
       <Suspense fallback={<PageLoader />}>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/quote-request-received" element={<QuoteRequestReceivedPage />} />
+          <Route path="/thank-you" element={<QuoteRequestReceivedPage />} />
           <Route path="/speed-insights" element={<SpeedInsightsDashboard />} />
           <Route path="/services/custom-web-development" element={<CustomWebDevPage />} />
           <Route path="/services/startup-website-development" element={<StartupWebsitePage />} />

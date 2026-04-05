@@ -1,5 +1,6 @@
 import { useState, type FormEvent } from "react";
 import { ArrowUpRight, Mail, MessageCircle, Phone, Star } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -78,12 +79,17 @@ const pricingPlans = [
 ];
 
 export const LazyHomeSections = () => {
+  const navigate = useNavigate();
   const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const message = `Hello Velocity Web,\n\nName: ${form.name}\nEmail: ${form.email}\nSubject: ${form.subject}\nMessage: ${form.message}`;
-    window.open(`https://wa.me/${company.whatsapp}?text=${encodeURIComponent(message)}`, "_blank", "noopener,noreferrer");
+    const searchParams = new URLSearchParams({
+      name: form.name,
+      subject: form.subject,
+    });
+
+    navigate(`/quote-request-received?${searchParams.toString()}`);
   };
 
   return (
@@ -261,9 +267,9 @@ export const LazyHomeSections = () => {
                   className="contact-field"
                 />
                 <Button type="submit" className="w-full bg-[#c8a444] text-[#0a0a0f] hover:bg-[#d7b75d]">
-                  Send via WhatsApp
+                  Submit Quote Request
                 </Button>
-                <p className="text-xs text-[#9d9dae]">This opens WhatsApp with your message pre-filled.</p>
+                <p className="text-xs text-[#9d9dae]">You&apos;ll see a confirmation page, then we&apos;ll redirect you to WhatsApp.</p>
               </form>
             </TiltCard>
 
