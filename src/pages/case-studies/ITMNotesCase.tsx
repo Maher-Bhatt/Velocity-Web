@@ -26,6 +26,7 @@ const caseStudySchema = {
   "@type": "Article",
   headline: "ITM Notes - student-first education platform case study",
   description: "Case study for a note-sharing platform designed around simple mobile-first access for university students.",
+  sameAs: "https://itm-notes-new.vercel.app/",
   author: {
     "@type": "Organization",
     name: "Velocity Web",
@@ -66,6 +67,11 @@ const ITMNotesCase = () => (
           <div className="flex flex-wrap gap-4">
             <Button asChild className="bg-[#c8a444] text-[#0a0a0f] hover:bg-[#d7b75d]">
               <Link to="/services/education-platform-development">Build an Education Platform</Link>
+            </Button>
+            <Button asChild variant="outline" className="border-[#c8a444] bg-transparent text-[#e2cd94] hover:bg-[#c8a444] hover:text-[#0a0a0f]">
+              <a href="https://itm-notes-new.vercel.app/" target="_blank" rel="noopener noreferrer">
+                View Live Project
+              </a>
             </Button>
             <Button asChild variant="outline" className="border-[#c8a444] bg-transparent text-[#e2cd94] hover:bg-[#c8a444] hover:text-[#0a0a0f]">
               <a href="/#portfolio">Back to Portfolio</a>

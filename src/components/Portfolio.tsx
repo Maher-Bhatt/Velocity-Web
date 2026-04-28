@@ -17,7 +17,7 @@ const projects = [
   {
     title: "ITM Notes",
     category: "Education Platform",
-    url: "https://itm-notes.vercel.app/",
+    url: "https://itm-notes-new.vercel.app/",
     desc: "A student-first note-sharing platform designed for fast access and simplicity. Built as a charity project.",
   },
 ];
