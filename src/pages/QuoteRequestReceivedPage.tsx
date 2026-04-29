@@ -55,11 +55,11 @@ const QuoteRequestReceivedPage = () => {
       <main className="min-h-screen bg-black px-4 py-10 text-white sm:px-6 lg:px-8">
         <div className="mx-auto flex min-h-[calc(100vh-5rem)] max-w-3xl items-center justify-center">
           <section className="relative w-full overflow-hidden rounded-[32px] border border-[#2a2416] bg-[linear-gradient(180deg,rgba(20,20,20,0.98),rgba(9,9,9,0.98))] px-6 py-10 shadow-[0_30px_120px_rgba(0,0,0,0.55)] sm:px-10 sm:py-12">
-            <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(200,169,110,0.18),transparent_35%)]" />
+            <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(183,255,60,0.18),transparent_35%)]" />
 
             <div className="relative z-10 text-center">
-              <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full border border-[#c8a96e66] bg-[#c8a96e14] shadow-[0_0_0_8px_rgba(200,169,110,0.06)]">
-                <CheckCheck className="h-10 w-10 text-[#c8a96e]" />
+              <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full border border-[#b7ff3c66] bg-[#b7ff3c14] shadow-[0_0_0_8px_rgba(183,255,60,0.06)]">
+                <CheckCheck className="h-10 w-10 text-[#b7ff3c]" />
               </div>
 
               <p className="mt-8 text-[0.72rem] uppercase tracking-[0.34em] text-[#b59a66]">Velocity Web</p>
@@ -73,8 +73,8 @@ const QuoteRequestReceivedPage = () => {
 
               <div className="mt-8 rounded-[24px] border border-[#2f2a1d] bg-[#111111] p-5 text-left">
                 <div className="flex items-start gap-4">
-                  <div className="mt-1 rounded-full border border-[#c8a96e55] bg-[#c8a96e12] p-2">
-                    <TimerReset className="h-4 w-4 text-[#c8a96e]" />
+                  <div className="mt-1 rounded-full border border-[#b7ff3c55] bg-[#b7ff3c12] p-2">
+                    <TimerReset className="h-4 w-4 text-[#b7ff3c]" />
                   </div>
                   <div>
                     <p className="text-sm font-medium text-[#f4ead2] [font-family:'Geist_Mono','SFMono-Regular',ui-monospace,monospace]">
@@ -91,14 +91,14 @@ const QuoteRequestReceivedPage = () => {
               <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
                 <a
                   href={whatsappUrl}
-                  className="inline-flex min-w-[220px] items-center justify-center gap-2 rounded-full bg-[#c8a96e] px-6 py-3 text-sm font-semibold text-black transition-transform duration-200 hover:-translate-y-0.5 hover:bg-[#d4b57d] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#f0d59f] focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+                  className="inline-flex min-w-[220px] items-center justify-center gap-2 rounded-full bg-[#b7ff3c] px-6 py-3 text-sm font-semibold text-black transition-transform duration-200 hover:-translate-y-0.5 hover:bg-[#d8ff73] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ecffc2] focus-visible:ring-offset-2 focus-visible:ring-offset-black"
                 >
                   <MessageCircle className="h-4 w-4" />
                   Open WhatsApp
                 </a>
                 <Link
                   to="/"
-                  className="inline-flex min-w-[220px] items-center justify-center rounded-full border border-[#3b3322] px-6 py-3 text-sm font-medium text-[#efe3c7] transition-colors hover:border-[#c8a96e66] hover:bg-[#151515]"
+                  className="inline-flex min-w-[220px] items-center justify-center rounded-full border border-[#23351a] px-6 py-3 text-sm font-medium text-[#eaffd0] transition-colors hover:border-[#b7ff3c66] hover:bg-[#151515]"
                 >
                   Back to Website
                 </Link>

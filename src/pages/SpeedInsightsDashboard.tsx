@@ -176,7 +176,7 @@ function BreakdownList({
         {entries.map((entry) => (
           <div key={entry.label} className="flex items-center justify-between rounded-2xl border border-transparent px-3 py-3 transition-colors hover:border-[#262626] hover:bg-[#141414]">
             <span className="text-sm text-[#e9e9e9]">{entry.label}</span>
-            <span className="text-sm font-medium text-[#c8a96e]">{entry.value}%</span>
+            <span className="text-sm font-medium text-[#b7ff3c]">{entry.value}%</span>
           </div>
         ))}
       </div>
@@ -244,7 +244,7 @@ export default function SpeedInsightsDashboard() {
                 <p className="text-xs uppercase tracking-[0.36em] text-[#737373]">velocity-web</p>
                 <div className="mt-3 flex flex-wrap items-center gap-3">
                   <h1 className="text-2xl font-semibold tracking-tight text-white sm:text-3xl">Speed Insights</h1>
-                  <span className="rounded-full border border-[#2a2a2a] bg-[#121212] px-3 py-1 text-xs uppercase tracking-[0.24em] text-[#c8a96e]">
+                  <span className="rounded-full border border-[#2a2a2a] bg-[#121212] px-3 py-1 text-xs uppercase tracking-[0.24em] text-[#b7ff3c]">
                     Mar 28 - Apr 3, 2026
                   </span>
                 </div>
@@ -265,7 +265,7 @@ export default function SpeedInsightsDashboard() {
 
                   return (
                     <div key={item.label} className="rounded-[22px] border border-[#1d1d1d] bg-[#111111] px-4 py-4">
-                      <div className="flex items-center gap-2 text-[#c8a96e]">
+                      <div className="flex items-center gap-2 text-[#b7ff3c]">
                         <Icon className="h-4 w-4" />
                         <span className="text-xs uppercase tracking-[0.22em] text-[#707070]">{item.label}</span>
                       </div>
@@ -302,7 +302,7 @@ export default function SpeedInsightsDashboard() {
                       <div
                         className="relative grid h-48 w-48 place-items-center rounded-full"
                         style={{
-                          background: `conic-gradient(#c8a96e 0deg ${progressAngle}deg, #1f1f1f ${progressAngle}deg 360deg)`,
+                          background: `conic-gradient(#b7ff3c 0deg ${progressAngle}deg, #1f1f1f ${progressAngle}deg 360deg)`,
                         }}
                         aria-label="Real Experience Score 51 out of 100"
                         role="img"
@@ -353,7 +353,7 @@ export default function SpeedInsightsDashboard() {
                             type="button"
                             onClick={() => setRouteTab(tab)}
                             className={cn(
-                              "rounded-full px-4 py-2 text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c8a96e]",
+                              "rounded-full px-4 py-2 text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b7ff3c]",
                               routeTab === tab ? "bg-[#1c1c1c] text-white" : "text-[#8e8e8e] hover:text-white",
                             )}
                           >
@@ -377,7 +377,7 @@ export default function SpeedInsightsDashboard() {
                               color: "#fff",
                             }}
                           />
-                          <Line type="monotone" dataKey="p75" stroke="#c8a96e" strokeWidth={3} dot={false} />
+                          <Line type="monotone" dataKey="p75" stroke="#b7ff3c" strokeWidth={3} dot={false} />
                           <Line type="monotone" dataKey="p90" stroke="#f97316" strokeWidth={2.2} dot={false} />
                           <Line type="monotone" dataKey="p95" stroke="#60a5fa" strokeWidth={2.2} dot={false} />
                           <Line type="monotone" dataKey="p99" stroke="#22c55e" strokeWidth={2.2} dot={false} />
@@ -413,7 +413,7 @@ export default function SpeedInsightsDashboard() {
                       fallback={
                         <div className="grid min-h-[420px] place-items-center rounded-[28px] border border-[#1a1a1a] bg-[#111111]">
                           <div className="text-center">
-                            <MapPinned className="mx-auto h-7 w-7 animate-pulse text-[#c8a96e]" />
+                            <MapPinned className="mx-auto h-7 w-7 animate-pulse text-[#b7ff3c]" />
                             <p className="mt-3 text-sm text-[#9f9f9f]">Loading geo map...</p>
                           </div>
                         </div>
@@ -434,7 +434,7 @@ export default function SpeedInsightsDashboard() {
                         <p className="text-xs uppercase tracking-[0.24em] text-[#727272]">Geo filters</p>
                         <h3 className="mt-2 text-lg font-semibold text-white">Region performance</h3>
                       </div>
-                      <Sparkles className="h-5 w-5 text-[#c8a96e]" />
+                      <Sparkles className="h-5 w-5 text-[#b7ff3c]" />
                     </div>
 
                     <div className="mt-5 flex flex-wrap gap-2">
@@ -444,9 +444,9 @@ export default function SpeedInsightsDashboard() {
                           type="button"
                           onClick={() => setGeoFilter(filter.value)}
                           className={cn(
-                            "rounded-full border px-3 py-2 text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c8a96e]",
+                            "rounded-full border px-3 py-2 text-sm transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b7ff3c]",
                             geoFilter === filter.value
-                              ? "border-[#c8a96e] bg-[#c8a96e14] text-[#f1e3bd]"
+                              ? "border-[#b7ff3c] bg-[#b7ff3c14] text-[#f1e3bd]"
                               : "border-[#232323] bg-[#0d0d0d] text-[#969696] hover:text-white",
                           )}
                         >
@@ -466,7 +466,7 @@ export default function SpeedInsightsDashboard() {
                           </div>
                           <div>
                             <p className="text-xs text-[#6f6f6f]">RES</p>
-                            <p className="mt-1 text-xl font-semibold text-[#c8a96e]">{selectedCountryData.res}</p>
+                            <p className="mt-1 text-xl font-semibold text-[#b7ff3c]">{selectedCountryData.res}</p>
                           </div>
                         </div>
                         <div className="mt-4">
@@ -510,7 +510,7 @@ export default function SpeedInsightsDashboard() {
                           type="button"
                           onClick={() => setDeviceTab(tab)}
                           className={cn(
-                            "rounded-full px-3 py-1.5 text-xs uppercase tracking-[0.14em] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c8a96e]",
+                            "rounded-full px-3 py-1.5 text-xs uppercase tracking-[0.14em] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b7ff3c]",
                             deviceTab === tab ? "bg-[#1a1a1a] text-white" : "text-[#8b8b8b] hover:text-white",
                           )}
                         >
@@ -526,7 +526,7 @@ export default function SpeedInsightsDashboard() {
                   subtitle="OS mix indicates broad desktop coverage with balanced mobile share"
                   entries={operatingSystemBreakdown}
                   rightLabel="Visitors"
-                  extra={<MonitorSmartphone className="mt-1 h-5 w-5 text-[#c8a96e]" />}
+                  extra={<MonitorSmartphone className="mt-1 h-5 w-5 text-[#b7ff3c]" />}
                 />
               </MotionSection>
             </main>

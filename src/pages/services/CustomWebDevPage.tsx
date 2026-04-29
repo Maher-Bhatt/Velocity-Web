@@ -74,17 +74,17 @@ const CustomWebDevPage = () => (
             usually the right answer.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Button asChild className="bg-[#c8a444] text-[#0a0a0f] hover:bg-[#d7b75d]">
+            <Button asChild className="bg-[#b7ff3c] text-[#0a0a0f] hover:bg-[#d8ff73]">
               <a href="/#contact">Let&apos;s build your site</a>
             </Button>
-            <Button asChild variant="outline" className="border-[#c8a444] bg-transparent text-[#e2cd94] hover:bg-[#c8a444] hover:text-[#0a0a0f]">
+            <Button asChild variant="outline" className="border-[#b7ff3c] bg-transparent text-[#d7ff71] hover:bg-[#b7ff3c] hover:text-[#0a0a0f]">
               <Link to="/case-studies/ztees">See project proof</Link>
             </Button>
           </div>
         </div>
 
         <TiltCard className="glass-card p-6">
-          <p className="text-sm uppercase tracking-[0.18em] text-[#c8a444]">Why teams hire us</p>
+          <p className="text-sm uppercase tracking-[0.18em] text-[#b7ff3c]">Why teams hire us</p>
           <ul className="mt-5 space-y-3 text-sm leading-relaxed text-[#d0d0dc]">
             <li>They need something stronger than a template</li>
             <li>They want React and TypeScript without agency bloat</li>
@@ -150,7 +150,7 @@ const CustomWebDevPage = () => (
         <div className="grid gap-6 md:grid-cols-2">
           <TiltCard className="step-card p-6">
             <h2 className="font-display text-2xl text-white">React for fast, flexible interfaces</h2>
-            <h3 className="mt-4 text-lg font-semibold text-[#e6d29b]">Component-driven UX without layout repetition</h3>
+            <h3 className="mt-4 text-lg font-semibold text-[#d7ff71]">Component-driven UX without layout repetition</h3>
             <p className="mt-3 text-sm leading-relaxed text-[#b7b7c6]">
               React gives us the control to design interfaces around the exact product flow the user needs. Whether that
               is a storefront, an MVP landing flow, a dashboard shell, or a content-heavy education experience, we can
@@ -160,7 +160,7 @@ const CustomWebDevPage = () => (
 
           <TiltCard className="step-card p-6">
             <h2 className="font-display text-2xl text-white">Node.js for product logic and integrations</h2>
-            <h3 className="mt-4 text-lg font-semibold text-[#e6d29b]">APIs, forms, and backend behavior that fits the business</h3>
+            <h3 className="mt-4 text-lg font-semibold text-[#d7ff71]">APIs, forms, and backend behavior that fits the business</h3>
             <p className="mt-3 text-sm leading-relaxed text-[#b7b7c6]">
               When the project needs server-side processing, database access, or custom APIs, Node.js gives us the
               ability to keep the frontend and backend aligned. That matters when forms need to become workflows, or
@@ -170,7 +170,7 @@ const CustomWebDevPage = () => (
 
           <TiltCard className="step-card p-6">
             <h2 className="font-display text-2xl text-white">TypeScript for cleaner long-term builds</h2>
-            <h3 className="mt-4 text-lg font-semibold text-[#e6d29b]">Less guesswork, safer refactors</h3>
+            <h3 className="mt-4 text-lg font-semibold text-[#d7ff71]">Less guesswork, safer refactors</h3>
             <p className="mt-3 text-sm leading-relaxed text-[#b7b7c6]">
               TypeScript helps us keep interfaces, data structures, and integrations more predictable. That means fewer
               hidden breakpoints during iteration, safer growth over time, and a codebase that is easier to maintain
@@ -180,7 +180,7 @@ const CustomWebDevPage = () => (
 
           <TiltCard className="step-card p-6">
             <h2 className="font-display text-2xl text-white">SEO and speed are part of the build</h2>
-            <h3 className="mt-4 text-lg font-semibold text-[#e6d29b]">Not something bolted on later</h3>
+            <h3 className="mt-4 text-lg font-semibold text-[#d7ff71]">Not something bolted on later</h3>
             <p className="mt-3 text-sm leading-relaxed text-[#b7b7c6]">
               We treat metadata, heading hierarchy, internal links, page structure, and performance as build-level
               decisions. That is especially important for startups and brands that want the website to help with
@@ -207,7 +207,7 @@ const CustomWebDevPage = () => (
               Some stores need more than a standard theme. If the product discovery flow, data model, or future feature
               roadmap goes beyond an off-the-shelf storefront, custom development becomes the better long-term path.
               The
-              <Link to="/case-studies/ztees" className="ml-1 text-[#e6d29b] underline underline-offset-4">
+              <Link to="/case-studies/ztees" className="ml-1 text-[#d7ff71] underline underline-offset-4">
                 Ztees case study
               </Link>
               shows what that speed-to-market mindset can look like in practice.
@@ -219,7 +219,7 @@ const CustomWebDevPage = () => (
             <p className="mt-4 text-sm leading-relaxed text-[#b7b7c6]">
               Wallet flows, account states, real-time updates, and trust-heavy onboarding are not things most template
               systems handle well. That is why projects like
-              <Link to="/case-studies/bountychains" className="ml-1 text-[#e6d29b] underline underline-offset-4">
+              <Link to="/case-studies/bountychains" className="ml-1 text-[#d7ff71] underline underline-offset-4">
                 BountyChains
               </Link>
               benefit from a product-minded frontend architecture from the start.
@@ -232,7 +232,7 @@ const CustomWebDevPage = () => (
               Student or community platforms usually win on clarity, speed, and mobile-first access. For those
               products, custom development is less about novelty and more about making the workflow feel obvious. That
               is exactly what we highlight in the
-              <Link to="/case-studies/itm-notes" className="ml-1 text-[#e6d29b] underline underline-offset-4">
+              <Link to="/case-studies/itm-notes" className="ml-1 text-[#d7ff71] underline underline-offset-4">
                 ITM Notes case study
               </Link>
               .
@@ -265,33 +265,33 @@ const CustomWebDevPage = () => (
               can jump directly into the more specific service pages below and choose the path that fits best.
             </p>
             <div className="mt-6 flex flex-wrap gap-4">
-              <Button asChild className="bg-[#c8a444] text-[#0a0a0f] hover:bg-[#d7b75d]">
+              <Button asChild className="bg-[#b7ff3c] text-[#0a0a0f] hover:bg-[#d8ff73]">
                 <a href="/#contact">
                   Get Started
                   <ArrowRight className="h-4 w-4" />
                 </a>
               </Button>
-              <Button asChild variant="outline" className="border-[#c8a444] bg-transparent text-[#e2cd94] hover:bg-[#c8a444] hover:text-[#0a0a0f]">
+              <Button asChild variant="outline" className="border-[#b7ff3c] bg-transparent text-[#d7ff71] hover:bg-[#b7ff3c] hover:text-[#0a0a0f]">
                 <Link to="/services/startup-website-development">Explore startup websites</Link>
               </Button>
             </div>
           </TiltCard>
 
           <TiltCard className="glass-card p-6">
-            <p className="text-sm uppercase tracking-[0.18em] text-[#c8a444]">Related services</p>
+            <p className="text-sm uppercase tracking-[0.18em] text-[#b7ff3c]">Related services</p>
             <ul className="mt-5 space-y-3 text-sm text-[#d0d0dc]">
               <li>
-                <Link to="/services/startup-website-development" className="text-[#e6d29b] underline underline-offset-4">
+                <Link to="/services/startup-website-development" className="text-[#d7ff71] underline underline-offset-4">
                   Startup website development
                 </Link>
               </li>
               <li>
-                <Link to="/services/web3-development" className="text-[#e6d29b] underline underline-offset-4">
+                <Link to="/services/web3-development" className="text-[#d7ff71] underline underline-offset-4">
                   Web3 development
                 </Link>
               </li>
               <li>
-                <Link to="/services/education-platform-development" className="text-[#e6d29b] underline underline-offset-4">
+                <Link to="/services/education-platform-development" className="text-[#d7ff71] underline underline-offset-4">
                   Education platform development
                 </Link>
               </li>

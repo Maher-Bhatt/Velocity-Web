@@ -3,10 +3,11 @@ import { cn } from "@/lib/utils";
 
 type TiltCardProps = {
   className?: string;
+  style?: CSSProperties;
   children: ReactNode;
 };
 
-export const TiltCard = ({ className, children }: TiltCardProps) => {
+export const TiltCard = ({ className, style, children }: TiltCardProps) => {
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
   const [canHover, setCanHover] = useState(false);
 
@@ -51,7 +52,7 @@ export const TiltCard = ({ className, children }: TiltCardProps) => {
   return (
     <div
       className={cn("tilt-card", className)}
-      style={canHover && !prefersReducedMotion ? ({ transformPerspective: 1000 } as CSSProperties) : undefined}
+      style={canHover && !prefersReducedMotion ? { ...style, transformPerspective: 1000 } : style}
       onMouseMove={canHover && !prefersReducedMotion ? handleMouseMove : undefined}
       onMouseLeave={canHover && !prefersReducedMotion ? resetTilt : undefined}
     >

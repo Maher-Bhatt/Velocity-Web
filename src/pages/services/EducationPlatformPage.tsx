@@ -69,7 +69,7 @@ const EducationPlatformPage = () => (
         </div>
 
         <TiltCard className="glass-card p-6">
-          <p className="text-sm uppercase tracking-[0.18em] text-[#c8a444]">Common requirements</p>
+          <p className="text-sm uppercase tracking-[0.18em] text-[#b7ff3c]">Common requirements</p>
           <ul className="mt-5 space-y-3 text-sm leading-relaxed text-[#d0d0dc]">
             <li>User management for students, admins, or educators</li>
             <li>Searchable content delivery and fast retrieval</li>
@@ -121,7 +121,7 @@ const EducationPlatformPage = () => (
         <div className="grid gap-6 md:grid-cols-2">
           <TiltCard className="step-card p-6">
             <h2 className="font-display text-2xl text-white">User management</h2>
-            <h3 className="mt-4 text-lg font-semibold text-[#e6d29b]">Role-aware access and clarity</h3>
+            <h3 className="mt-4 text-lg font-semibold text-[#d7ff71]">Role-aware access and clarity</h3>
             <p className="mt-3 text-sm leading-relaxed text-[#b7b7c6]">
               Some education products need student logins, moderator tools, or contributor flows. We design those
               states so the user understands what they can do immediately without being overloaded by administrative
@@ -130,7 +130,7 @@ const EducationPlatformPage = () => (
           </TiltCard>
           <TiltCard className="step-card p-6">
             <h2 className="font-display text-2xl text-white">Content delivery</h2>
-            <h3 className="mt-4 text-lg font-semibold text-[#e6d29b]">Find the right material quickly</h3>
+            <h3 className="mt-4 text-lg font-semibold text-[#d7ff71]">Find the right material quickly</h3>
             <p className="mt-3 text-sm leading-relaxed text-[#b7b7c6]">
               Search, filters, categories, and clear page hierarchy are critical in note-sharing and learning products.
               Students should not need five clicks to locate the thing they came for.
@@ -138,7 +138,7 @@ const EducationPlatformPage = () => (
           </TiltCard>
           <TiltCard className="step-card p-6">
             <h2 className="font-display text-2xl text-white">Progress and status tracking</h2>
-            <h3 className="mt-4 text-lg font-semibold text-[#e6d29b]">Only when it serves the product</h3>
+            <h3 className="mt-4 text-lg font-semibold text-[#d7ff71]">Only when it serves the product</h3>
             <p className="mt-3 text-sm leading-relaxed text-[#b7b7c6]">
               Not every education platform needs a full LMS. But where progress or activity status matters, we build it
               into the workflow in a way that feels supportive instead of bureaucratic.
@@ -146,7 +146,7 @@ const EducationPlatformPage = () => (
           </TiltCard>
           <TiltCard className="step-card p-6">
             <h2 className="font-display text-2xl text-white">Performance on mobile networks</h2>
-            <h3 className="mt-4 text-lg font-semibold text-[#e6d29b]">Fast access is part of usability</h3>
+            <h3 className="mt-4 text-lg font-semibold text-[#d7ff71]">Fast access is part of usability</h3>
             <p className="mt-3 text-sm leading-relaxed text-[#b7b7c6]">
               In education, slow performance is not a minor annoyance. It is a barrier. We keep the interface lean so
               the product works well on real devices in real student conditions.
@@ -172,33 +172,33 @@ const EducationPlatformPage = () => (
               first. The case study explains how that decision shaped the interface, stack, and overall product value.
             </p>
             <div className="mt-6 flex flex-wrap gap-4">
-              <Button asChild className="bg-[#c8a444] text-[#0a0a0f] hover:bg-[#d7b75d]">
+              <Button asChild className="bg-[#b7ff3c] text-[#0a0a0f] hover:bg-[#d8ff73]">
                 <Link to="/case-studies/itm-notes">
                   View ITM Notes Case Study
                   <ArrowRight className="h-4 w-4" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" className="border-[#c8a444] bg-transparent text-[#e2cd94] hover:bg-[#c8a444] hover:text-[#0a0a0f]">
+              <Button asChild variant="outline" className="border-[#b7ff3c] bg-transparent text-[#d7ff71] hover:bg-[#b7ff3c] hover:text-[#0a0a0f]">
                 <Link to="/services/custom-web-development">Explore custom web development</Link>
               </Button>
             </div>
           </TiltCard>
 
           <TiltCard className="glass-card p-6">
-            <p className="text-sm uppercase tracking-[0.18em] text-[#c8a444]">Related internal links</p>
+            <p className="text-sm uppercase tracking-[0.18em] text-[#b7ff3c]">Related internal links</p>
             <ul className="mt-5 space-y-3 text-sm text-[#d0d0dc]">
               <li>
-                <Link to="/services/custom-web-development" className="text-[#e6d29b] underline underline-offset-4">
+                <Link to="/services/custom-web-development" className="text-[#d7ff71] underline underline-offset-4">
                   Custom web development
                 </Link>
               </li>
               <li>
-                <Link to="/services/startup-website-development" className="text-[#e6d29b] underline underline-offset-4">
+                <Link to="/services/startup-website-development" className="text-[#d7ff71] underline underline-offset-4">
                   Startup website development
                 </Link>
               </li>
               <li>
-                <a href="/#contact" className="text-[#e6d29b] underline underline-offset-4">
+                <a href="/#contact" className="text-[#d7ff71] underline underline-offset-4">
                   Contact Velocity Web
                 </a>
               </li>

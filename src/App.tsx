@@ -18,7 +18,7 @@ const NotFound = lazy(() => import("./pages/NotFound.tsx"));
 const PageLoader = () => (
   <div className="min-h-screen bg-[#0a0a0a] flex items-center justify-center">
     <div className="text-center">
-      <div className="inline-block h-12 w-12 animate-spin rounded-full border-b-2 border-t-2 border-[#c8a96e]" />
+      <div className="inline-block h-12 w-12 animate-spin rounded-full border-b-2 border-t-2 border-[#b7ff3c]" />
       <p className="mt-4 text-[#8f8f8f]">Loading...</p>
     </div>
   </div>

@@ -64,17 +64,17 @@ const BountyChainsCase = () => (
             crypto-native behavior without feeling like it was only for insiders.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Button asChild className="bg-[#c8a444] text-[#0a0a0f] hover:bg-[#d7b75d]">
+            <Button asChild className="bg-[#b7ff3c] text-[#0a0a0f] hover:bg-[#d8ff73]">
               <Link to="/services/web3-development">Build a Web3 Platform</Link>
             </Button>
-            <Button asChild variant="outline" className="border-[#c8a444] bg-transparent text-[#e2cd94] hover:bg-[#c8a444] hover:text-[#0a0a0f]">
+            <Button asChild variant="outline" className="border-[#b7ff3c] bg-transparent text-[#d7ff71] hover:bg-[#b7ff3c] hover:text-[#0a0a0f]">
               <a href="/#portfolio">Back to Portfolio</a>
             </Button>
           </div>
         </div>
 
         <TiltCard className="glass-card p-6">
-          <p className="text-sm uppercase tracking-[0.18em] text-[#c8a444]">Project overview</p>
+          <p className="text-sm uppercase tracking-[0.18em] text-[#b7ff3c]">Project overview</p>
           <ul className="mt-5 space-y-3 text-sm leading-relaxed text-[#d0d0dc]">
             <li>Project type: Web3 platform</li>
             <li>Primary need: A custom platform for bounty posting and claiming</li>
@@ -130,7 +130,7 @@ const BountyChainsCase = () => (
         <div className="grid gap-6 md:grid-cols-2">
           <TiltCard className="step-card p-6">
             <h2 className="font-display text-2xl text-white">Modern React frontend</h2>
-            <h3 className="mt-4 text-lg font-semibold text-[#e6d29b]">Component-based product clarity</h3>
+            <h3 className="mt-4 text-lg font-semibold text-[#d7ff71]">Component-based product clarity</h3>
             <p className="mt-3 text-sm leading-relaxed text-[#b7b7c6]">
               We focused on a modern React structure that could communicate platform actions clearly, support changing
               states cleanly, and keep the user interface feeling intentional rather than experimental.
@@ -138,7 +138,7 @@ const BountyChainsCase = () => (
           </TiltCard>
           <TiltCard className="step-card p-6">
             <h2 className="font-display text-2xl text-white">Wallet-aware interaction flow</h2>
-            <h3 className="mt-4 text-lg font-semibold text-[#e6d29b]">Platform behavior designed around trust</h3>
+            <h3 className="mt-4 text-lg font-semibold text-[#d7ff71]">Platform behavior designed around trust</h3>
             <p className="mt-3 text-sm leading-relaxed text-[#b7b7c6]">
               Wallet connection, action states, and transaction-aware messaging were treated as first-class parts of the
               product experience instead of afterthoughts. That helped reduce ambiguity at key moments.
@@ -146,7 +146,7 @@ const BountyChainsCase = () => (
           </TiltCard>
           <TiltCard className="step-card p-6">
             <h2 className="font-display text-2xl text-white">Real-time updates</h2>
-            <h3 className="mt-4 text-lg font-semibold text-[#e6d29b]">A community product needs live feedback</h3>
+            <h3 className="mt-4 text-lg font-semibold text-[#d7ff71]">A community product needs live feedback</h3>
             <p className="mt-3 text-sm leading-relaxed text-[#b7b7c6]">
               For bounty platforms, state freshness matters. Real-time behavior helps users trust the platform and makes
               the product feel active instead of static.
@@ -154,7 +154,7 @@ const BountyChainsCase = () => (
           </TiltCard>
           <TiltCard className="step-card p-6">
             <h2 className="font-display text-2xl text-white">More approachable Web3 UX</h2>
-            <h3 className="mt-4 text-lg font-semibold text-[#e6d29b]">Fewer tech-demo vibes</h3>
+            <h3 className="mt-4 text-lg font-semibold text-[#d7ff71]">Fewer tech-demo vibes</h3>
             <p className="mt-3 text-sm leading-relaxed text-[#b7b7c6]">
               Visual hierarchy, copy, and interface states were all shaped to make the product feel more like a usable
               platform and less like a proof-of-concept for insiders.
@@ -226,13 +226,13 @@ const BountyChainsCase = () => (
 
         <TiltCard className="glass-card p-6">
           <div className="flex flex-wrap gap-4">
-            <Button asChild className="bg-[#c8a444] text-[#0a0a0f] hover:bg-[#d7b75d]">
+            <Button asChild className="bg-[#b7ff3c] text-[#0a0a0f] hover:bg-[#d8ff73]">
               <Link to="/services/web3-development">
                 Explore Web3 Development
                 <ArrowRight className="h-4 w-4" />
               </Link>
             </Button>
-            <Button asChild variant="outline" className="border-[#c8a444] bg-transparent text-[#e2cd94] hover:bg-[#c8a444] hover:text-[#0a0a0f]">
+            <Button asChild variant="outline" className="border-[#b7ff3c] bg-transparent text-[#d7ff71] hover:bg-[#b7ff3c] hover:text-[#0a0a0f]">
               <Link to="/services/custom-web-development">Back to custom web development</Link>
             </Button>
           </div>

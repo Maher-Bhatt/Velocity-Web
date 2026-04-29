@@ -36,7 +36,7 @@ const Portfolio = () => (
           Projects We're <span className="text-gradient">Proud Of</span>
         </h2>
         <p className="text-muted-foreground mt-5 max-w-xl mx-auto leading-relaxed">
-          Real websites, for real people. No templates — every project is built from scratch.
+          Real websites, for real people. No templates - every project is built from scratch.
         </p>
       </motion.div>
 

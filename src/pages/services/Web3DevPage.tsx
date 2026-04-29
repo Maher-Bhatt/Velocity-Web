@@ -69,7 +69,7 @@ const Web3DevPage = () => (
         </div>
 
         <TiltCard className="glass-card p-6">
-          <p className="text-sm uppercase tracking-[0.18em] text-[#c8a444]">What we help with</p>
+          <p className="text-sm uppercase tracking-[0.18em] text-[#b7ff3c]">What we help with</p>
           <ul className="mt-5 space-y-3 text-sm leading-relaxed text-[#d0d0dc]">
             <li>Web3 landing sites and product-facing websites</li>
             <li>dApp frontends with wallet-aware states</li>
@@ -123,7 +123,7 @@ const Web3DevPage = () => (
         <div className="grid gap-6 md:grid-cols-2">
           <TiltCard className="step-card p-6">
             <h2 className="font-display text-2xl text-white">Frontend development for blockchain products</h2>
-            <h3 className="mt-4 text-lg font-semibold text-[#e6d29b]">React interfaces around state-heavy flows</h3>
+            <h3 className="mt-4 text-lg font-semibold text-[#d7ff71]">React interfaces around state-heavy flows</h3>
             <p className="mt-3 text-sm leading-relaxed text-[#b7b7c6]">
               Wallet state, transaction state, pending actions, and chain-specific behavior all shape how the user
               experiences the product. We use modern frontend patterns to make those states feel visible and manageable
@@ -132,7 +132,7 @@ const Web3DevPage = () => (
           </TiltCard>
           <TiltCard className="step-card p-6">
             <h2 className="font-display text-2xl text-white">UI and UX for crypto platforms</h2>
-            <h3 className="mt-4 text-lg font-semibold text-[#e6d29b]">Reduce fear and unnecessary jargon</h3>
+            <h3 className="mt-4 text-lg font-semibold text-[#d7ff71]">Reduce fear and unnecessary jargon</h3>
             <p className="mt-3 text-sm leading-relaxed text-[#b7b7c6]">
               We simplify terminology, explain actions at the moment they matter, and structure the interface so users
               are not guessing what a wallet prompt means or what happens next. Better copy and hierarchy reduce drop
@@ -141,7 +141,7 @@ const Web3DevPage = () => (
           </TiltCard>
           <TiltCard className="step-card p-6">
             <h2 className="font-display text-2xl text-white">Smart contract and wallet integration readiness</h2>
-            <h3 className="mt-4 text-lg font-semibold text-[#e6d29b]">Frontend prepared for real product behavior</h3>
+            <h3 className="mt-4 text-lg font-semibold text-[#d7ff71]">Frontend prepared for real product behavior</h3>
             <p className="mt-3 text-sm leading-relaxed text-[#b7b7c6]">
               When the product needs to integrate with wallet flows or contract-driven states, the UI must be designed
               for that from the start. We plan the screen states, success and failure handling, and progressive trust
@@ -150,7 +150,7 @@ const Web3DevPage = () => (
           </TiltCard>
           <TiltCard className="step-card p-6">
             <h2 className="font-display text-2xl text-white">SEO and speed still matter</h2>
-            <h3 className="mt-4 text-lg font-semibold text-[#e6d29b]">Web3 products still need discoverability</h3>
+            <h3 className="mt-4 text-lg font-semibold text-[#d7ff71]">Web3 products still need discoverability</h3>
             <p className="mt-3 text-sm leading-relaxed text-[#b7b7c6]">
               Even highly technical products need marketing pages, page speed discipline, and strong content structure
               so users can find and understand the offer. That is why our Web3 work still connects back to broader
@@ -178,33 +178,33 @@ const Web3DevPage = () => (
               experience, and real-time states were structured around usability instead of noise.
             </p>
             <div className="mt-6 flex flex-wrap gap-4">
-              <Button asChild className="bg-[#c8a444] text-[#0a0a0f] hover:bg-[#d7b75d]">
+              <Button asChild className="bg-[#b7ff3c] text-[#0a0a0f] hover:bg-[#d8ff73]">
                 <Link to="/case-studies/bountychains">
                   View BountyChains Case Study
                   <ArrowRight className="h-4 w-4" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" className="border-[#c8a444] bg-transparent text-[#e2cd94] hover:bg-[#c8a444] hover:text-[#0a0a0f]">
+              <Button asChild variant="outline" className="border-[#b7ff3c] bg-transparent text-[#d7ff71] hover:bg-[#b7ff3c] hover:text-[#0a0a0f]">
                 <Link to="/services/custom-web-development">Back to custom web development</Link>
               </Button>
             </div>
           </TiltCard>
 
           <TiltCard className="glass-card p-6">
-            <p className="text-sm uppercase tracking-[0.18em] text-[#c8a444]">Related internal links</p>
+            <p className="text-sm uppercase tracking-[0.18em] text-[#b7ff3c]">Related internal links</p>
             <ul className="mt-5 space-y-3 text-sm text-[#d0d0dc]">
               <li>
-                <Link to="/services/custom-web-development" className="text-[#e6d29b] underline underline-offset-4">
+                <Link to="/services/custom-web-development" className="text-[#d7ff71] underline underline-offset-4">
                   Custom web development
                 </Link>
               </li>
               <li>
-                <Link to="/services/startup-website-development" className="text-[#e6d29b] underline underline-offset-4">
+                <Link to="/services/startup-website-development" className="text-[#d7ff71] underline underline-offset-4">
                   Startup website development
                 </Link>
               </li>
               <li>
-                <a href="/#contact" className="text-[#e6d29b] underline underline-offset-4">
+                <a href="/#contact" className="text-[#d7ff71] underline underline-offset-4">
                   Contact Velocity Web
                 </a>
               </li>

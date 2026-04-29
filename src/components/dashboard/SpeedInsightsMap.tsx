@@ -33,7 +33,7 @@ function SpeedInsightsMap({ countries, activeFilter, selectedCountry, onCountryS
 
   return (
     <div className="relative overflow-hidden rounded-[28px] border border-[#2a2a2a] bg-[#111111]">
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(200,169,110,0.16),_transparent_34%),linear-gradient(180deg,_rgba(255,255,255,0.02),_transparent)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(183,255,60,0.16),_transparent_34%),linear-gradient(180deg,_rgba(255,255,255,0.02),_transparent)]" />
 
       <div className="relative flex items-center justify-between border-b border-[#1f1f1f] px-5 py-4">
         <div>
@@ -41,7 +41,7 @@ function SpeedInsightsMap({ countries, activeFilter, selectedCountry, onCountryS
           <p className="mt-2 text-sm text-[#9f9f9f]">Performance color overlay across sampled visitor regions</p>
         </div>
         <div className="inline-flex items-center gap-2 rounded-full border border-[#2a2a2a] bg-[#0d0d0d] px-3 py-2 text-xs text-[#b9b9b9]">
-          <Globe2 className="h-4 w-4 text-[#c8a96e]" />
+          <Globe2 className="h-4 w-4 text-[#b7ff3c]" />
           World view
         </div>
       </div>
@@ -65,7 +65,7 @@ function SpeedInsightsMap({ countries, activeFilter, selectedCountry, onCountryS
             <path
               key={path}
               d={path}
-              fill={index === 1 ? "rgba(200,169,110,0.09)" : "rgba(255,255,255,0.055)"}
+              fill={index === 1 ? "rgba(183,255,60,0.09)" : "rgba(255,255,255,0.055)"}
               stroke="rgba(255,255,255,0.08)"
               strokeWidth="2"
             />
@@ -100,8 +100,8 @@ function SpeedInsightsMap({ countries, activeFilter, selectedCountry, onCountryS
                 onClick={() => onCountrySelect(country.name)}
                 aria-pressed={selected}
                 className={cn(
-                  "absolute -translate-x-1/2 -translate-y-1/2 rounded-full border text-left transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c8a96e] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a]",
-                  selected ? "scale-105 border-[#c8a96e] bg-[#171717]/90 px-3 py-2 shadow-[0_0_0_1px_rgba(200,169,110,0.16)]" : "border-transparent bg-transparent p-3 hover:bg-[#171717]/70",
+                  "absolute -translate-x-1/2 -translate-y-1/2 rounded-full border text-left transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b7ff3c] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a]",
+                  selected ? "scale-105 border-[#b7ff3c] bg-[#171717]/90 px-3 py-2 shadow-[0_0_0_1px_rgba(183,255,60,0.16)]" : "border-transparent bg-transparent p-3 hover:bg-[#171717]/70",
                 )}
                 style={{ left: `${country.x}%`, top: `${country.y}%` }}
               >
@@ -114,7 +114,7 @@ function SpeedInsightsMap({ countries, activeFilter, selectedCountry, onCountryS
         {visibleCountries.length === 0 ? (
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="rounded-2xl border border-dashed border-[#2a2a2a] bg-[#121212]/90 px-6 py-5 text-center">
-              <MapPinned className="mx-auto h-6 w-6 text-[#c8a96e]" />
+              <MapPinned className="mx-auto h-6 w-6 text-[#b7ff3c]" />
               <p className="mt-3 text-sm text-white">No countries match this filter.</p>
               <p className="mt-1 text-xs text-[#9f9f9f]">Switch filters to review route performance by region.</p>
             </div>
