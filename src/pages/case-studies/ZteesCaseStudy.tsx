@@ -89,28 +89,28 @@ const ZteesCaseStudy = () => (
             feeling disposable.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Button asChild className="bg-[#b7ff3c] text-[#0a0a0f] hover:bg-[#d8ff73]">
+            <Button asChild className="bg-[#6366f1] text-[#0a0a0f] hover:bg-[#d8ff73]">
               <Link to="/services/custom-web-development">Build Your E-Commerce Platform</Link>
             </Button>
-            <Button asChild variant="outline" className="border-[#b7ff3c] bg-transparent text-[#d7ff71] hover:bg-[#b7ff3c] hover:text-[#0a0a0f]">
+            <Button asChild variant="outline" className="border-[#6366f1] bg-transparent text-[#818cf8] hover:bg-[#6366f1] hover:text-[#0a0a0f]">
               <a href="/#portfolio">Back to Portfolio</a>
             </Button>
           </div>
         </div>
 
         <TiltCard className="glass-card p-6">
-          <p className="text-sm uppercase tracking-[0.18em] text-[#b7ff3c]">Headline metrics</p>
+          <p className="text-sm uppercase tracking-[0.18em] text-[#6366f1]">Headline metrics</p>
           <div className="mt-5 grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
-            <div className="rounded-xl border border-[#b7ff3c22] bg-[#111119] p-4">
-              <p className="font-display text-3xl text-white">240%</p>
+            <div className="rounded-xl border border-[#6366f122] bg-[#111119] p-4">
+              <p className="font-display text-3xl text-[#0f0f1a]">240%</p>
               <p className="mt-1 text-sm text-[#a9a9b8]">Sales increase</p>
             </div>
-            <div className="rounded-xl border border-[#b7ff3c22] bg-[#111119] p-4">
-              <p className="font-display text-3xl text-white">3.2%</p>
+            <div className="rounded-xl border border-[#6366f122] bg-[#111119] p-4">
+              <p className="font-display text-3xl text-[#0f0f1a]">3.2%</p>
               <p className="mt-1 text-sm text-[#a9a9b8]">Conversion rate</p>
             </div>
-            <div className="rounded-xl border border-[#b7ff3c22] bg-[#111119] p-4">
-              <p className="font-display text-3xl text-white">48 hours</p>
+            <div className="rounded-xl border border-[#6366f122] bg-[#111119] p-4">
+              <p className="font-display text-3xl text-[#0f0f1a]">48 hours</p>
               <p className="mt-1 text-sm text-[#a9a9b8]">Time to launch</p>
             </div>
           </div>
@@ -129,21 +129,21 @@ const ZteesCaseStudy = () => (
 
         <div className="grid gap-6 lg:grid-cols-3">
           <TiltCard className="glass-card p-6">
-            <h2 className="font-display text-2xl text-white">Limited trust on first visit</h2>
+            <h2 className="font-display text-2xl text-[#0f0f1a]">Limited trust on first visit</h2>
             <p className="mt-4 text-sm leading-relaxed text-[#b7b7c6]">
               New apparel brands need legitimacy fast. Without a polished storefront, visitors hesitate to trust the
               product quality, checkout flow, or overall seriousness of the business.
             </p>
           </TiltCard>
           <TiltCard className="glass-card p-6">
-            <h2 className="font-display text-2xl text-white">Product presentation needed work</h2>
+            <h2 className="font-display text-2xl text-[#0f0f1a]">Product presentation needed work</h2>
             <p className="mt-4 text-sm leading-relaxed text-[#b7b7c6]">
               Clothing products depend heavily on visual confidence. The store needed a cleaner structure and richer
               product interaction so customers could understand what they were buying more quickly.
             </p>
           </TiltCard>
           <TiltCard className="glass-card p-6">
-            <h2 className="font-display text-2xl text-white">Fast launch pressure</h2>
+            <h2 className="font-display text-2xl text-[#0f0f1a]">Fast launch pressure</h2>
             <p className="mt-4 text-sm leading-relaxed text-[#b7b7c6]">
               The founder needed the store live quickly to support active promotion. That meant the build had to be
               fast, but the user experience still had to feel intentional and conversion-ready.
@@ -164,8 +164,8 @@ const ZteesCaseStudy = () => (
 
         <div className="grid gap-6 md:grid-cols-2">
           <TiltCard className="step-card p-6">
-            <h2 className="font-display text-2xl text-white">A custom-built e-commerce platform</h2>
-            <h3 className="mt-4 text-lg font-semibold text-[#d7ff71]">Built for a fast, trust-building first impression</h3>
+            <h2 className="font-display text-2xl text-[#0f0f1a]">A custom-built e-commerce platform</h2>
+            <h3 className="mt-4 text-lg font-semibold text-[#818cf8]">Built for a fast, trust-building first impression</h3>
             <p className="mt-3 text-sm leading-relaxed text-[#b7b7c6]">
               We structured the homepage, collection flow, and product detail pages to make the brand feel more
               established from the first second. That meant stronger hierarchy, clearer CTAs, better spacing, and a
@@ -176,8 +176,8 @@ const ZteesCaseStudy = () => (
           </TiltCard>
 
           <TiltCard className="step-card p-6">
-            <h2 className="font-display text-2xl text-white">Front and back product image flip effects</h2>
-            <h3 className="mt-4 text-lg font-semibold text-[#d7ff71]">A more useful way to browse apparel</h3>
+            <h2 className="font-display text-2xl text-[#0f0f1a]">Front and back product image flip effects</h2>
+            <h3 className="mt-4 text-lg font-semibold text-[#818cf8]">A more useful way to browse apparel</h3>
             <p className="mt-3 text-sm leading-relaxed text-[#b7b7c6]">
               We introduced front-back image interaction so customers could understand garment details faster without
               needing a heavy or confusing gallery experience. That helped the browsing flow feel more tactile and more
@@ -186,8 +186,8 @@ const ZteesCaseStudy = () => (
           </TiltCard>
 
           <TiltCard className="step-card p-6">
-            <h2 className="font-display text-2xl text-white">WhatsApp-friendly commerce flow</h2>
-            <h3 className="mt-4 text-lg font-semibold text-[#d7ff71]">Support for direct customer conversations</h3>
+            <h2 className="font-display text-2xl text-[#0f0f1a]">WhatsApp-friendly commerce flow</h2>
+            <h3 className="mt-4 text-lg font-semibold text-[#818cf8]">Support for direct customer conversations</h3>
             <p className="mt-3 text-sm leading-relaxed text-[#b7b7c6]">
               Because the brand needed a practical ordering path, we aligned the store experience with a WhatsApp-aware
               sales flow. That kept the path familiar for the audience and reduced hesitation during the buying process.
@@ -195,8 +195,8 @@ const ZteesCaseStudy = () => (
           </TiltCard>
 
           <TiltCard className="step-card p-6">
-            <h2 className="font-display text-2xl text-white">Responsive QA and launch polish</h2>
-            <h3 className="mt-4 text-lg font-semibold text-[#d7ff71]">Ship fast without looking rushed</h3>
+            <h2 className="font-display text-2xl text-[#0f0f1a]">Responsive QA and launch polish</h2>
+            <h3 className="mt-4 text-lg font-semibold text-[#818cf8]">Ship fast without looking rushed</h3>
             <p className="mt-3 text-sm leading-relaxed text-[#b7b7c6]">
               The final stage focused on mobile layout behavior, CTA visibility, visual consistency, and the small
               details that make a storefront feel trustworthy. That polish mattered because the launch speed only had
@@ -218,7 +218,7 @@ const ZteesCaseStudy = () => (
 
         <div className="grid gap-6 md:grid-cols-2">
           <TiltCard className="glass-card p-6">
-            <h2 className="font-display text-2xl text-white">More control over product experience</h2>
+            <h2 className="font-display text-2xl text-[#0f0f1a]">More control over product experience</h2>
             <p className="mt-4 text-sm leading-relaxed text-[#b7b7c6]">
               Ztees needed product presentation that could feel branded immediately while still staying simple to browse.
               A custom build approach allowed us to shape the storefront around apparel browsing behavior instead of
@@ -226,7 +226,7 @@ const ZteesCaseStudy = () => (
             </p>
           </TiltCard>
           <TiltCard className="glass-card p-6">
-            <h2 className="font-display text-2xl text-white">Stronger future scalability</h2>
+            <h2 className="font-display text-2xl text-[#0f0f1a]">Stronger future scalability</h2>
             <p className="mt-4 text-sm leading-relaxed text-[#b7b7c6]">
               The store needed a launch now, but it also needed room for future expansion. A custom-first mindset made
               it easier to think about roadmap features, deeper analytics, and broader storefront behavior later without
@@ -248,7 +248,7 @@ const ZteesCaseStudy = () => (
 
         <div className="grid gap-6 lg:grid-cols-[1fr_0.9fr]">
           <TiltCard className="glass-card p-6">
-            <h2 className="font-display text-2xl text-white">Results summary</h2>
+            <h2 className="font-display text-2xl text-[#0f0f1a]">Results summary</h2>
             <p className="mt-4 text-sm leading-relaxed text-[#b7b7c6]">
               Within the first month, Ztees saw a 240% increase in online sales, a 3.2% conversion rate, and a store
               launch completed in 48 hours. Those numbers matter because they reflect the practical impact of a better
@@ -263,8 +263,8 @@ const ZteesCaseStudy = () => (
           </TiltCard>
 
           <TiltCard className="glass-card p-6">
-            <h2 className="font-display text-2xl text-white">Tech stack used</h2>
-            <ul className="mt-4 space-y-3 text-sm leading-relaxed text-[#d0d0dc]">
+            <h2 className="font-display text-2xl text-[#0f0f1a]">Tech stack used</h2>
+            <ul className="mt-4 space-y-3 text-sm leading-relaxed text-[#4b4b6b]">
               <li>Frontend: React</li>
               <li>Backend: Node.js</li>
               <li>Database: PostgreSQL</li>
@@ -287,11 +287,11 @@ const ZteesCaseStudy = () => (
 
         <div className="grid gap-6 md:grid-cols-2">
           <TiltCard className="glass-card p-6">
-            <h2 className="font-display text-2xl text-white">Lesson 1: Speed works when structure is right</h2>
+            <h2 className="font-display text-2xl text-[#0f0f1a]">Lesson 1: Speed works when structure is right</h2>
             <p className="mt-4 text-sm leading-relaxed text-[#b7b7c6]">
               A fast launch is only valuable when the product presentation, mobile UX, and core purchase flow are
               handled intentionally. That is why our
-              <Link to="/services/custom-web-development" className="ml-1 text-[#d7ff71] underline underline-offset-4">
+              <Link to="/services/custom-web-development" className="ml-1 text-[#818cf8] underline underline-offset-4">
                 custom web development service
               </Link>
               starts with structure before surface.
@@ -299,12 +299,12 @@ const ZteesCaseStudy = () => (
           </TiltCard>
 
           <TiltCard className="glass-card p-6">
-            <h2 className="font-display text-2xl text-white">Lesson 2: Conversion strategy should be designed in early</h2>
+            <h2 className="font-display text-2xl text-[#0f0f1a]">Lesson 2: Conversion strategy should be designed in early</h2>
             <p className="mt-4 text-sm leading-relaxed text-[#b7b7c6]">
               Once the base storefront is strong, performance improvements become easier to prioritize and implement.
               The Ztees build reinforced how much product hierarchy, trust, and CTA clarity matter before the first
               campaign even goes live. That is why our
-              <Link to="/services/custom-web-development" className="ml-1 text-[#d7ff71] underline underline-offset-4">
+              <Link to="/services/custom-web-development" className="ml-1 text-[#818cf8] underline underline-offset-4">
                 custom web development service
               </Link>
               bakes in product hierarchy, trust, and CTA planning early so brands can keep improving without
@@ -320,13 +320,13 @@ const ZteesCaseStudy = () => (
             own product, the next step is simple.
           </p>
           <div className="mt-6 flex flex-wrap gap-4">
-            <Button asChild className="bg-[#b7ff3c] text-[#0a0a0f] hover:bg-[#d8ff73]">
+            <Button asChild className="bg-[#6366f1] text-[#0a0a0f] hover:bg-[#d8ff73]">
               <Link to="/services/custom-web-development">
                 Let&apos;s build your platform
                 <ArrowRight className="h-4 w-4" />
               </Link>
             </Button>
-            <Button asChild variant="outline" className="border-[#b7ff3c] bg-transparent text-[#d7ff71] hover:bg-[#b7ff3c] hover:text-[#0a0a0f]">
+            <Button asChild variant="outline" className="border-[#6366f1] bg-transparent text-[#818cf8] hover:bg-[#6366f1] hover:text-[#0a0a0f]">
               <a href="/#portfolio">Back to portfolio</a>
             </Button>
           </div>

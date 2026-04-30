@@ -41,7 +41,7 @@ function SpeedInsightsMap({ countries, activeFilter, selectedCountry, onCountryS
           <p className="mt-2 text-sm text-[#9f9f9f]">Performance color overlay across sampled visitor regions</p>
         </div>
         <div className="inline-flex items-center gap-2 rounded-full border border-[#2a2a2a] bg-[#0d0d0d] px-3 py-2 text-xs text-[#b9b9b9]">
-          <Globe2 className="h-4 w-4 text-[#b7ff3c]" />
+          <Globe2 className="h-4 w-4 text-[#6366f1]" />
           World view
         </div>
       </div>
@@ -100,8 +100,8 @@ function SpeedInsightsMap({ countries, activeFilter, selectedCountry, onCountryS
                 onClick={() => onCountrySelect(country.name)}
                 aria-pressed={selected}
                 className={cn(
-                  "absolute -translate-x-1/2 -translate-y-1/2 rounded-full border text-left transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b7ff3c] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a]",
-                  selected ? "scale-105 border-[#b7ff3c] bg-[#171717]/90 px-3 py-2 shadow-[0_0_0_1px_rgba(183,255,60,0.16)]" : "border-transparent bg-transparent p-3 hover:bg-[#171717]/70",
+                  "absolute -translate-x-1/2 -translate-y-1/2 rounded-full border text-left transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#6366f1] focus-visible:ring-offset-2 focus-visible:ring-offset-white",
+                  selected ? "scale-105 border-[#6366f1] bg-[#f5f5fd]/90 px-3 py-2 shadow-[0_0_0_1px_rgba(99,102,241,0.16)]" : "border-transparent bg-transparent p-3 hover:bg-[#f5f5fd]/70",
                 )}
                 style={{ left: `${country.x}%`, top: `${country.y}%` }}
               >
@@ -114,8 +114,8 @@ function SpeedInsightsMap({ countries, activeFilter, selectedCountry, onCountryS
         {visibleCountries.length === 0 ? (
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="rounded-2xl border border-dashed border-[#2a2a2a] bg-[#121212]/90 px-6 py-5 text-center">
-              <MapPinned className="mx-auto h-6 w-6 text-[#b7ff3c]" />
-              <p className="mt-3 text-sm text-white">No countries match this filter.</p>
+              <MapPinned className="mx-auto h-6 w-6 text-[#6366f1]" />
+              <p className="mt-3 text-sm text-[#0f0f1a]">No countries match this filter.</p>
               <p className="mt-1 text-xs text-[#9f9f9f]">Switch filters to review route performance by region.</p>
             </div>
           </div>

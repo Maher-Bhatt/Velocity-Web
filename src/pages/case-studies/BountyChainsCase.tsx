@@ -64,18 +64,18 @@ const BountyChainsCase = () => (
             crypto-native behavior without feeling like it was only for insiders.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Button asChild className="bg-[#b7ff3c] text-[#0a0a0f] hover:bg-[#d8ff73]">
+            <Button asChild className="bg-[#6366f1] text-[#0a0a0f] hover:bg-[#d8ff73]">
               <Link to="/services/web3-development">Build a Web3 Platform</Link>
             </Button>
-            <Button asChild variant="outline" className="border-[#b7ff3c] bg-transparent text-[#d7ff71] hover:bg-[#b7ff3c] hover:text-[#0a0a0f]">
+            <Button asChild variant="outline" className="border-[#6366f1] bg-transparent text-[#818cf8] hover:bg-[#6366f1] hover:text-[#0a0a0f]">
               <a href="/#portfolio">Back to Portfolio</a>
             </Button>
           </div>
         </div>
 
         <TiltCard className="glass-card p-6">
-          <p className="text-sm uppercase tracking-[0.18em] text-[#b7ff3c]">Project overview</p>
-          <ul className="mt-5 space-y-3 text-sm leading-relaxed text-[#d0d0dc]">
+          <p className="text-sm uppercase tracking-[0.18em] text-[#6366f1]">Project overview</p>
+          <ul className="mt-5 space-y-3 text-sm leading-relaxed text-[#4b4b6b]">
             <li>Project type: Web3 platform</li>
             <li>Primary need: A custom platform for bounty posting and claiming</li>
             <li>Why custom: Wallet-aware UX and real-time states are not template-friendly</li>
@@ -95,21 +95,21 @@ const BountyChainsCase = () => (
         />
         <div className="grid gap-6 md:grid-cols-3">
           <TiltCard className="glass-card p-6">
-            <h2 className="font-display text-2xl text-white">Web3 UX complexity</h2>
+            <h2 className="font-display text-2xl text-[#0f0f1a]">Web3 UX complexity</h2>
             <p className="mt-4 text-sm leading-relaxed text-[#b7b7c6]">
               Crypto products often carry too much technical jargon and too little user guidance. That raises the cost of
               entry even for interested users.
             </p>
           </TiltCard>
           <TiltCard className="glass-card p-6">
-            <h2 className="font-display text-2xl text-white">Accessibility for non-technical users</h2>
+            <h2 className="font-display text-2xl text-[#0f0f1a]">Accessibility for non-technical users</h2>
             <p className="mt-4 text-sm leading-relaxed text-[#b7b7c6]">
               The platform needed to make blockchain behavior feel understandable enough for people who were not deep in
               Web3 product conventions.
             </p>
           </TiltCard>
           <TiltCard className="glass-card p-6">
-            <h2 className="font-display text-2xl text-white">Real-time and trust-heavy interactions</h2>
+            <h2 className="font-display text-2xl text-[#0f0f1a]">Real-time and trust-heavy interactions</h2>
             <p className="mt-4 text-sm leading-relaxed text-[#b7b7c6]">
               Bounty posting, claiming, and state updates needed to feel dependable. In Web3, trust is part of the UX,
               not only part of the protocol.
@@ -129,32 +129,32 @@ const BountyChainsCase = () => (
         />
         <div className="grid gap-6 md:grid-cols-2">
           <TiltCard className="step-card p-6">
-            <h2 className="font-display text-2xl text-white">Modern React frontend</h2>
-            <h3 className="mt-4 text-lg font-semibold text-[#d7ff71]">Component-based product clarity</h3>
+            <h2 className="font-display text-2xl text-[#0f0f1a]">Modern React frontend</h2>
+            <h3 className="mt-4 text-lg font-semibold text-[#818cf8]">Component-based product clarity</h3>
             <p className="mt-3 text-sm leading-relaxed text-[#b7b7c6]">
               We focused on a modern React structure that could communicate platform actions clearly, support changing
               states cleanly, and keep the user interface feeling intentional rather than experimental.
             </p>
           </TiltCard>
           <TiltCard className="step-card p-6">
-            <h2 className="font-display text-2xl text-white">Wallet-aware interaction flow</h2>
-            <h3 className="mt-4 text-lg font-semibold text-[#d7ff71]">Platform behavior designed around trust</h3>
+            <h2 className="font-display text-2xl text-[#0f0f1a]">Wallet-aware interaction flow</h2>
+            <h3 className="mt-4 text-lg font-semibold text-[#818cf8]">Platform behavior designed around trust</h3>
             <p className="mt-3 text-sm leading-relaxed text-[#b7b7c6]">
               Wallet connection, action states, and transaction-aware messaging were treated as first-class parts of the
               product experience instead of afterthoughts. That helped reduce ambiguity at key moments.
             </p>
           </TiltCard>
           <TiltCard className="step-card p-6">
-            <h2 className="font-display text-2xl text-white">Real-time updates</h2>
-            <h3 className="mt-4 text-lg font-semibold text-[#d7ff71]">A community product needs live feedback</h3>
+            <h2 className="font-display text-2xl text-[#0f0f1a]">Real-time updates</h2>
+            <h3 className="mt-4 text-lg font-semibold text-[#818cf8]">A community product needs live feedback</h3>
             <p className="mt-3 text-sm leading-relaxed text-[#b7b7c6]">
               For bounty platforms, state freshness matters. Real-time behavior helps users trust the platform and makes
               the product feel active instead of static.
             </p>
           </TiltCard>
           <TiltCard className="step-card p-6">
-            <h2 className="font-display text-2xl text-white">More approachable Web3 UX</h2>
-            <h3 className="mt-4 text-lg font-semibold text-[#d7ff71]">Fewer tech-demo vibes</h3>
+            <h2 className="font-display text-2xl text-[#0f0f1a]">More approachable Web3 UX</h2>
+            <h3 className="mt-4 text-lg font-semibold text-[#818cf8]">Fewer tech-demo vibes</h3>
             <p className="mt-3 text-sm leading-relaxed text-[#b7b7c6]">
               Visual hierarchy, copy, and interface states were all shaped to make the product feel more like a usable
               platform and less like a proof-of-concept for insiders.
@@ -187,8 +187,8 @@ const BountyChainsCase = () => (
             </p>
           </TiltCard>
           <TiltCard className="glass-card p-6">
-            <h2 className="font-display text-2xl text-white">Tech stack</h2>
-            <ul className="mt-4 space-y-3 text-sm leading-relaxed text-[#d0d0dc]">
+            <h2 className="font-display text-2xl text-[#0f0f1a]">Tech stack</h2>
+            <ul className="mt-4 space-y-3 text-sm leading-relaxed text-[#4b4b6b]">
               <li>Frontend: React, TypeScript, Tailwind CSS</li>
               <li>Backend: Node.js, Firebase</li>
               <li>Web3 layer: Ethers.js or Web3.js style integration paths</li>
@@ -209,14 +209,14 @@ const BountyChainsCase = () => (
         />
         <div className="grid gap-6 md:grid-cols-2">
           <TiltCard className="glass-card p-6">
-            <h2 className="font-display text-2xl text-white">Web3 UX does not have to be intimidating</h2>
+            <h2 className="font-display text-2xl text-[#0f0f1a]">Web3 UX does not have to be intimidating</h2>
             <p className="mt-4 text-sm leading-relaxed text-[#b7b7c6]">
               The more complex the underlying model, the more valuable interface clarity becomes. Good Web3 products
               teach through the interaction instead of assuming the user already knows the rules.
             </p>
           </TiltCard>
           <TiltCard className="glass-card p-6">
-            <h2 className="font-display text-2xl text-white">Real-time behavior changes perception</h2>
+            <h2 className="font-display text-2xl text-[#0f0f1a]">Real-time behavior changes perception</h2>
             <p className="mt-4 text-sm leading-relaxed text-[#b7b7c6]">
               Community platforms feel more trustworthy when the system responds visibly and consistently. Real-time is
               not only a feature. It is part of the product's credibility.
@@ -226,13 +226,13 @@ const BountyChainsCase = () => (
 
         <TiltCard className="glass-card p-6">
           <div className="flex flex-wrap gap-4">
-            <Button asChild className="bg-[#b7ff3c] text-[#0a0a0f] hover:bg-[#d8ff73]">
+            <Button asChild className="bg-[#6366f1] text-[#0a0a0f] hover:bg-[#d8ff73]">
               <Link to="/services/web3-development">
                 Explore Web3 Development
                 <ArrowRight className="h-4 w-4" />
               </Link>
             </Button>
-            <Button asChild variant="outline" className="border-[#b7ff3c] bg-transparent text-[#d7ff71] hover:bg-[#b7ff3c] hover:text-[#0a0a0f]">
+            <Button asChild variant="outline" className="border-[#6366f1] bg-transparent text-[#818cf8] hover:bg-[#6366f1] hover:text-[#0a0a0f]">
               <Link to="/services/custom-web-development">Back to custom web development</Link>
             </Button>
           </div>

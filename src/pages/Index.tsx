@@ -135,16 +135,16 @@ const Index = () => (
     <section className="mx-auto max-w-7xl px-4 pb-12 pt-4 sm:px-6 lg:px-10 lg:pb-20">
       <div className="grid gap-8 lg:grid-cols-[1.02fr_0.98fr] lg:items-center">
         <div className="space-y-8">
-          <div className="reveal-card inline-flex items-center gap-2 rounded-full border border-[#b7ff3c3d] bg-[#071008] px-4 py-2 text-sm text-[#d7ff71] shadow-[0_0_32px_rgba(183,255,60,0.12)]">
-            <span className="h-2 w-2 rounded-full bg-[#b7ff3c] shadow-[0_0_18px_rgba(183,255,60,0.85)]" />
+          <div className="reveal-card inline-flex items-center gap-2 rounded-full border border-[#6366f13d] bg-[#f8f8ff] px-4 py-2 text-sm text-[#818cf8] shadow-[0_0_32px_rgba(99,102,241,0.12)]">
+            <span className="h-2 w-2 rounded-full bg-[#6366f1] shadow-[0_0_18px_rgba(99,102,241,0.85)]" />
             Founder-led web studio. Average turnaround: 1-2 weeks
           </div>
 
           <div className="space-y-5">
-            <h1 className="reveal-card max-w-4xl font-display text-5xl font-semibold leading-[0.95] tracking-tight text-white sm:text-6xl lg:text-7xl" style={{ "--delay": "90ms" } as CSSProperties}>
+            <h1 className="reveal-card max-w-4xl font-display text-5xl font-semibold leading-[0.95] tracking-tight text-[#0f0f1a] sm:text-6xl lg:text-7xl" style={{ "--delay": "90ms" } as CSSProperties}>
               Websites that feel like a <span className="accent-gradient-text">growth engine</span>.
             </h1>
-            <p className="reveal-card max-w-2xl text-base leading-relaxed text-[#c5d2c0] sm:text-lg" style={{ "--delay": "160ms" } as CSSProperties}>
+            <p className="reveal-card max-w-2xl text-base leading-relaxed text-[#4b4b6b] sm:text-lg" style={{ "--delay": "160ms" } as CSSProperties}>
               Velocity Web builds premium custom websites, web apps, e-commerce stores, startup MVPs, Web3 products,
               and education platforms with sharp design, clean code, and launch-ready SEO.
             </p>
@@ -158,7 +158,7 @@ const Index = () => (
               asChild
               size="lg"
               variant="outline"
-              className="rounded-full border-[#b7ff3c55] bg-[#071008] px-7 text-[#d7ff71] hover:bg-[#b7ff3c] hover:text-[#071008]"
+              className="rounded-full border-[#6366f155] bg-[#f8f8ff] px-7 text-[#818cf8] hover:bg-[#6366f1] hover:text-[#0f0f1a]"
             >
               <a href="#portfolio">View Work</a>
             </Button>
@@ -171,8 +171,8 @@ const Index = () => (
               { value: "SEO", label: "built into the structure" },
             ].map((item) => (
               <TiltCard key={item.label} className="mesh-card p-4">
-                <p className="font-display text-3xl text-white">{item.value}</p>
-                <p className="mt-1 text-sm text-[#a8b6a2]">{item.label}</p>
+                <p className="font-display text-3xl text-[#0f0f1a]">{item.value}</p>
+                <p className="mt-1 text-sm text-[#5c5c80]">{item.label}</p>
               </TiltCard>
             ))}
           </div>
@@ -184,16 +184,16 @@ const Index = () => (
           <div className="relative z-10 flex h-full min-h-[31rem] flex-col justify-between gap-5">
             <div className="flex items-start justify-between gap-4">
               <div>
-                <p className="text-xs uppercase tracking-[0.24em] text-[#8fa586]">Velocity launch console</p>
-                <h2 className="mt-2 font-display text-2xl text-white">Custom build pipeline</h2>
+                <p className="text-xs uppercase tracking-[0.24em] text-[#6b6b8a]">Velocity launch console</p>
+                <h2 className="mt-2 font-display text-2xl text-[#0f0f1a]">Custom build pipeline</h2>
               </div>
-              <span className="rounded-full bg-[#b7ff3c] px-3 py-1 text-xs font-bold text-[#071008]">LIVE</span>
+              <span className="rounded-full bg-[#6366f1] px-3 py-1 text-xs font-bold text-[#0f0f1a]">LIVE</span>
             </div>
 
             <div className="relative mx-auto flex h-56 w-56 items-center justify-center rounded-full">
               <div className="hero-orbit absolute inset-0 rounded-full" />
-              <div className="relative z-10 flex h-32 w-32 items-center justify-center rounded-full border border-[#b7ff3c3d] bg-[#071008] shadow-[0_0_70px_rgba(183,255,60,0.22)]">
-                <Sparkles className="h-12 w-12 text-[#b7ff3c]" />
+              <div className="relative z-10 flex h-32 w-32 items-center justify-center rounded-full border border-[#6366f13d] bg-[#f8f8ff] shadow-[0_0_70px_rgba(99,102,241,0.22)]">
+                <Sparkles className="h-12 w-12 text-[#6366f1]" />
               </div>
             </div>
 
@@ -203,22 +203,22 @@ const Index = () => (
                 ["Code", "React architecture"],
                 ["Launch", "SEO + analytics"],
               ].map(([title, text]) => (
-                <div key={title} className="rounded-2xl border border-[#b7ff3c24] bg-[#061007cc] p-4 backdrop-blur">
-                  <p className="font-display text-lg text-white">{title}</p>
-                  <p className="mt-1 text-xs leading-relaxed text-[#a8b6a2]">{text}</p>
+                <div key={title} className="rounded-2xl border border-[#6366f124] bg-white/90 p-4 backdrop-blur">
+                  <p className="font-display text-lg text-[#0f0f1a]">{title}</p>
+                  <p className="mt-1 text-xs leading-relaxed text-[#5c5c80]">{text}</p>
                 </div>
               ))}
             </div>
 
-            <div className="rounded-[1.5rem] border border-[#b7ff3c24] bg-black/30 p-4">
-              <div className="mb-4 flex items-center justify-between text-xs uppercase tracking-[0.18em] text-[#8fa586]">
+            <div className="rounded-[1.5rem] border border-[#6366f124] bg-[#f0f0ff]/60 p-4">
+              <div className="mb-4 flex items-center justify-between text-xs uppercase tracking-[0.18em] text-[#6b6b8a]">
                 <span>Current proof</span>
-                <span className="text-[#d7ff71]">Ztees</span>
+                <span className="text-[#818cf8]">Ztees</span>
               </div>
-              <div className="signal-line h-1 rounded-full bg-[#152217]" />
+              <div className="signal-line h-1 rounded-full bg-[#e0e0f0]" />
               <div className="mt-4 grid grid-cols-3 gap-3">
                 {["240% lift", "48h launch", "3.2% CVR"].map((metric) => (
-                  <div key={metric} className="rounded-xl bg-[#071008] px-3 py-2 text-center text-sm text-[#d7ff71]">
+                  <div key={metric} className="rounded-xl bg-[#f8f8ff] px-3 py-2 text-center text-sm text-[#818cf8]">
                     {metric}
                   </div>
                 ))}
@@ -228,11 +228,11 @@ const Index = () => (
         </div>
       </div>
 
-      <div className="proof-ticker mt-10 overflow-hidden rounded-full border border-[#b7ff3c1f] bg-[#07100899] py-3">
+      <div className="proof-ticker mt-10 overflow-hidden rounded-full border border-[#6366f11f] bg-[#f8f8ff99] py-3">
         <div className="ticker-track flex gap-3 px-3">
           {[...proofItems, ...proofItems].map((item, index) => (
-            <span key={`${item}-${index}`} className="inline-flex items-center gap-2 rounded-full border border-[#b7ff3c1c] bg-[#b7ff3c0d] px-4 py-2 text-sm text-[#cfe5c5]">
-              <BadgeCheck className="h-4 w-4 text-[#b7ff3c]" />
+            <span key={`${item}-${index}`} className="inline-flex items-center gap-2 rounded-full border border-[#6366f11c] bg-[#6366f10d] px-4 py-2 text-sm text-[#3b3b5c]">
+              <BadgeCheck className="h-4 w-4 text-[#6366f1]" />
               {item}
             </span>
           ))}
@@ -254,18 +254,18 @@ const Index = () => (
 
             return (
               <TiltCard key={service.title} className="mesh-card reveal-card h-full p-5" style={{ "--delay": `${index * 70}ms` } as CSSProperties}>
-                <div className="mb-7 inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-[#b7ff3c26] bg-[#b7ff3c12]">
-                  <Icon className="h-5 w-5 text-[#b7ff3c]" />
+                <div className="mb-7 inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-[#6366f126] bg-[#6366f112]">
+                  <Icon className="h-5 w-5 text-[#6366f1]" />
                 </div>
-                <h3 className="font-display text-xl text-white">{service.title}</h3>
-                <p className="mt-4 text-sm leading-relaxed text-[#b7c8b0]">{service.description}</p>
+                <h3 className="font-display text-xl text-[#0f0f1a]">{service.title}</h3>
+                <p className="mt-4 text-sm leading-relaxed text-[#4b4b6b]">{service.description}</p>
                 {service.path ? (
-                  <Link to={service.path} className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-[#d7ff71]">
+                  <Link to={service.path} className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-[#818cf8]">
                     Learn More
                     <ArrowRight className="h-4 w-4" />
                   </Link>
                 ) : (
-                  <a href="/#contact" className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-[#d7ff71]">
+                  <a href="/#contact" className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-[#818cf8]">
                     Ask About Launch Ops
                     <ArrowRight className="h-4 w-4" />
                   </a>
@@ -288,26 +288,26 @@ const Index = () => (
         <div className="grid gap-6 lg:grid-cols-3">
           {projects.map((project, index) => (
             <TiltCard key={project.name} className="mesh-card reveal-card h-full p-6" style={{ "--delay": `${index * 90}ms` } as CSSProperties}>
-              <p className="text-xs uppercase tracking-[0.22em] text-[#b7ff3c]">{project.category}</p>
-              <h3 className="mt-3 font-display text-3xl text-white">{project.name}</h3>
-              <p className="mt-4 min-h-20 text-sm leading-relaxed text-[#b7c8b0]">{project.description}</p>
+              <p className="text-xs uppercase tracking-[0.22em] text-[#6366f1]">{project.category}</p>
+              <h3 className="mt-3 font-display text-3xl text-[#0f0f1a]">{project.name}</h3>
+              <p className="mt-4 min-h-20 text-sm leading-relaxed text-[#4b4b6b]">{project.description}</p>
               <div className="mt-5 grid gap-2">
                 {project.stats.map((stat) => (
-                  <div key={stat} className="rounded-2xl border border-[#b7ff3c1f] bg-[#071008] px-4 py-3 text-sm text-[#d7e8d0]">
+                  <div key={stat} className="rounded-2xl border border-[#6366f11f] bg-[#f8f8ff] px-4 py-3 text-sm text-[#4b4b6b]">
                     {stat}
                   </div>
                 ))}
               </div>
               <div className="mt-6 flex flex-wrap gap-4 text-sm">
-                <Link to={project.caseStudyUrl} className="inline-flex items-center gap-2 text-[#d7ff71]">
+                <Link to={project.caseStudyUrl} className="inline-flex items-center gap-2 text-[#818cf8]">
                   Case Study
                   <ArrowRight className="h-4 w-4" />
                 </Link>
-                <Link to={project.servicePath} className="inline-flex items-center gap-2 text-[#d7ff71]">
+                <Link to={project.servicePath} className="inline-flex items-center gap-2 text-[#818cf8]">
                   Related Service
                   <ArrowRight className="h-4 w-4" />
                 </Link>
-                <a href={project.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[#d0ddd0]">
+                <a href={project.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[#5c5c80]">
                   Live Site
                   <ArrowUpRight className="h-4 w-4" />
                 </a>
@@ -328,10 +328,10 @@ const Index = () => (
         <div className="relative z-10 grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
           <div>
             <p className="section-label">READY WHEN YOU ARE</p>
-            <h2 className="mt-4 max-w-2xl font-display text-4xl font-semibold leading-tight text-white sm:text-5xl">
+            <h2 className="mt-4 max-w-2xl font-display text-4xl font-semibold leading-tight text-[#0f0f1a] sm:text-5xl">
               Let us turn your idea into a site people can trust.
             </h2>
-            <p className="mt-4 max-w-2xl text-[#b7c8b0]">
+            <p className="mt-4 max-w-2xl text-[#4b4b6b]">
               Send the brief. We will help shape the offer, build the interface, ship the site, and keep it fast.
             </p>
           </div>
